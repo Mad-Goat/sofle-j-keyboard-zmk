@@ -2,13 +2,13 @@
 include:
  # - board: eyelash_sofle_left
 #    shield: nice_view
-  - board: eyelash_sofle_right
+  - board: eyelash_sofle_right nice_view_gem
 #   shield: nice_view_custom
     shield: nice_view
-  - board: eyelash_sofle_left
+  - board: eyelash_sofle_left nice_view_gem
     shield: nice_view
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_NICE_VIEW_GEM_ANIMATION=y -DCONFIG_NICE_VIEW_GEM_WPM_FIXED_RANGE=960 -DCONFIG_NICE_VIEW_GEM_WPM_FIXED_RANGE=n 
     artifact-name: eyelash_sofle_studio_left
   - board: eyelash_sofle_left
     shield: settings_reset
